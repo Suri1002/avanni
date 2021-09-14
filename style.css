@@ -1,0 +1,85 @@
+/*Product design*/
+
+.container
+{
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card
+{
+  position: relative;
+  width: 300px;
+  height: 340px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  /*backdrop-filter: blur(15px);*/
+}
+.container .card .imgBx
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  transition: 0.5s ease-in-out;
+}
+.container .card .imgBx h2
+{
+  transition: 0.5s ease-in-out;
+}
+.container .card .imgBx img{
+  max-width: 100%;
+  margin: 0 0 20px;
+  transition: 0.5s ease-in-out;
+}
+.container .card:hover h2 
+{
+ transform: translateY(-100px); 
+ transition: 0.5s ease-in-out;
+}
+
+.container .card:hover img
+{
+ /*transform: translate(0px,0px);*/
+ transform: translateY(-107px);
+ width: 200px;
+ height: 190px;
+ position: absolute;
+ left: 0px;
+ top: 7px;
+
+}
+
+.container .card .content 
+{
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.container .card:hover .content
+{
+opacity: 1;
+visibility: visible;
+transition: translate(-50px);
+
+} 
+.container .card .content a
+{
+  display: block;
+}
+
+
+/*Product design end*/
